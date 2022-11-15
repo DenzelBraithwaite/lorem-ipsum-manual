@@ -1,6 +1,6 @@
 nav {
     /* display: none; */
-    background-color: rgb(217, 217, 217);
+    background-color: #ffffff56;
     height: 100vh;
     overflow-y: scroll;
     grid-column: 1;
@@ -19,7 +19,6 @@ ul > li {
     border-bottom: 1px solid rgb(140, 140, 140);
     padding: 24px 0;
     padding-left: 4px;
-    /* background-color: rgb(184, 210, 210); */
 
     font-weight: 700;
 }

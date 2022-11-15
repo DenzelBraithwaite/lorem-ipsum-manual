@@ -65,8 +65,7 @@ table {
 }
 
 body {
-    background-color: #dbe4ff;
-    background-color: blueviolet;
+    background-color: #edf2ff;
     max-width: 100vw;
     height: 100vh;
     margin: 0 auto;
@@ -78,8 +77,9 @@ body {
 }
 
 main {
-    background-color: red;
     max-width: 100%;
+    max-height: 100vh;
+    overflow: scroll;
 }
 
 main p {
@@ -91,9 +91,8 @@ main p:last-child {
 }
 
 .wrapper {
-    overflow: hidden;
-    max-height: 100vh;
-    overflow: scroll;
+    width: 90%;
+    margin: 0 auto;
 }
 
 h1 {
