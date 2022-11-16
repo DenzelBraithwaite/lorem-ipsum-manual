@@ -1,7 +1,17 @@
-nav {
-    background-color: #ffffff56;
+.navbar {
+    opacity: 70%;
     height: 100vh;
     overflow-y: scroll;
+    margin-left: 2px;
+    transition: background-color 0.2s ease-out;
+}
+
+.navbar:hover {
+    opacity: 100%;
+    background-color: #42419a3c;
+    border-right: 1px solid #8c8c8c;
+    transition: all 0.3s ease-out;
+    z-index: 2;
 }
 
 ul {
@@ -10,16 +20,28 @@ ul {
     gap: 16px;
 }
 
-ul > li {
+.btn-nav:link,
+.btn-nav:visited {
+    background-color: #edf2ff;
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 10px 10px 10px 10px;
     width: 100%;
-    font-size: 1.5rem;
-    border-bottom: 1px solid rgb(140, 140, 140);
+    font-size: 1.25rem;
+    border: 1px solid #8c8c8c;
     padding: 24px 0;
     padding-left: 4px;
-
     font-weight: 700;
+    transition: background-color 0.2s ease-in;
 }
 
-ul > li:first-child {
+.btn-nav:hover,
+.btn-nav:active {
+    color: #f8f9fa;
+    background-color: #42419a83;
+    transition: background-color 0.3s ease-out;
+}
+
+.btn-nav:first-child {
     margin-top: 16px;
 }
