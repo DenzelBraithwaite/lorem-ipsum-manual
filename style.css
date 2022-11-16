@@ -77,11 +77,11 @@ body {
 
     display: grid;
     grid-template-columns: 20% auto;
+    overflow: hidden;
 }
 
 header {
-    display: flex;
-    justify-content: center;
+    text-align: center;
 }
 
 main {
@@ -95,13 +95,13 @@ main {
     justify-content: space-between;
 }
 
-.wrapper p {
-    margin-bottom: 40px;
-}
-
 .wrapper {
     width: 90%;
     margin: 0 auto;
+}
+
+.wrapper p {
+    margin-bottom: 40px;
 }
 
 .logo {
@@ -115,6 +115,14 @@ main {
     text-align: center;
     margin-bottom: 1rem;
     padding-top: 32px;
+}
+
+/* Not showing unless positioned? */
+.title-logo {
+    background-image: url(assets/board_logo.png);
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
 }
 
 .subtitle {
