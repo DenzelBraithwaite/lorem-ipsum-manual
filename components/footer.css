@@ -1,11 +1,12 @@
 footer {
-    background-color: #444;
+    background-color: #212529;
 
-    grid-row: 2;
-    grid-column: 2 / 3;
-    transform: translate(0, -100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 footer p {
-    color: #fff;
+    color: #f8f9fa;
+    padding: 30px;
 }
