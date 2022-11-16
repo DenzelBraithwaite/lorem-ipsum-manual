@@ -1,10 +1,7 @@
 nav {
-    /* display: none; */
     background-color: #ffffff56;
     height: 100vh;
     overflow-y: scroll;
-    grid-column: 1;
-    grid-row: 1 / 2;
 }
 
 ul {
