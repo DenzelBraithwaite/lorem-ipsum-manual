@@ -1,6 +1,7 @@
 .navbar {
     opacity: 70%;
     height: 100vh;
+    position: sticky;
     overflow-y: scroll;
     margin-left: 2px;
     transition: background-color 0.2s ease-out;
