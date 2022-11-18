@@ -1,4 +1,5 @@
 .navbar {
+    /* background-color: #42419a80; */
     opacity: 70%;
     height: 100vh;
     position: sticky;
@@ -23,7 +24,9 @@ ul {
 
 .btn-nav:link,
 .btn-nav:visited {
-    background-color: #edf2ff;
+    /* background-color: #edf2ff; */
+    background-color: #42419a80;
+    color: white;
     display: inline-block;
     text-decoration: none;
     border-radius: 10px 10px 10px 10px;
