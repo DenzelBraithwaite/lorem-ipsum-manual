@@ -70,6 +70,6 @@ ul {
 .btn-expand:hover,
 .btn-expand:active {
     color: #fed967;
-    scale: 1.05;
-    transform: translate(60%, 0);
+    scale: 1.025;
+    transform: translate(55%, 0);
 }
