@@ -69,7 +69,9 @@ html {
 }
 
 body {
-    background-color: #444;
+    position: relative;
+    /* background-color: #edf2ff; */
+    background-color: red;
     max-width: 1200px;
     height: 100vh;
     margin: 0 auto;
@@ -82,16 +84,16 @@ body {
 }
 
 header {
-    text-align: center;
     position: relative;
+    text-align: center;
 }
 
 main {
+    z-index: 0;
     background-color: #edf2ff;
     max-height: 100%;
     overflow: scroll;
-    min-width: 960px;
-
+    width: 960px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;

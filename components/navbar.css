@@ -1,14 +1,13 @@
 .navbar {
     background-color: #192f64;
     height: 100vh;
-    position: sticky;
     overflow-y: scroll;
     margin-left: 2px;
     transition: background-color 0.2s ease-out;
+    overflow-x: visible;
 }
 
 .navbar:hover {
-    /* border-right: 1px solid #8c8c8c; */
     transition: all 0.3s ease-out;
     z-index: 2;
 }
@@ -17,7 +16,6 @@ ul {
     display: flex;
     flex-direction: column;
     gap: 16px;
-    text-align: center;
 }
 
 .btn-nav:link,
@@ -28,11 +26,13 @@ ul {
     border-radius: 10px 10px 10px 10px;
     width: 90%;
     font-size: 1.25rem;
-    /* border: 1px solid #8c8c8c; */
     padding: 18px 0;
     padding-left: 4px;
     font-weight: 700;
     transition: background-color 0.1s ease-in;
+
+    position: relative;
+    z-index: 2;
 }
 
 .btn-nav:hover,
@@ -44,4 +44,25 @@ ul {
 
 .btn-nav:first-child {
     margin-top: 16px;
+}
+
+.btn-expand:link,
+.btn-expand:visited {
+    background-color: #192f64;
+    color: #f8f9fa;
+    text-decoration: none;
+    /* display: inline-block; */
+    display: flex;
+    text-align: center;
+    height: 40px;
+    width: 40px;
+    padding: 10px;
+    border-radius: 50%;
+
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(50%, 0);
+    z-index: 1;
 }
