@@ -1,6 +1,7 @@
 @import url(components/button.css);
 @import url(components/navbar.css);
 @import url(components/footer.css);
+@import url(components/card.css);
 
 html,
 body,
@@ -103,7 +104,7 @@ main {
     margin: 0 auto;
 }
 
-.wrapper p {
+p {
     margin-bottom: 40px;
 }
 
@@ -137,7 +138,7 @@ main {
 
 .section-title {
     text-align: center;
-    margin-top: 100px;
+    margin-top: 200px;
     margin-bottom: 70px;
     font-size: 1.5rem;
 }

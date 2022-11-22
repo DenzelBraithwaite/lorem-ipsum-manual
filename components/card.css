@@ -1,11 +1,26 @@
 .q-a {
-    background-color: green;
+}
+
+.question-wrapper {
+    background-color: #274b9f15;
+    margin-bottom: 10px;
+    font-weight: 700;
+
+    display: flex;
+    justify-content: space-between;
 }
 
 .question {
-    background-color: yellow;
+    padding: 2px 0;
+    margin-bottom: 0;
 }
 
 .answer {
-    background-color: cyan;
+    margin-bottom: 60px;
+}
+
+.arr-down {
+    height: 1.5rem;
+    width: 1.5rem;
+    /* stroke: blue; */
 }
