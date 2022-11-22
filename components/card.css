@@ -1,13 +1,19 @@
-.q-a {
+.q-a-section {
+  margin-bottom: 100px;
 }
 
 .question-wrapper {
-    background-color: #274b9f15;
+    background-color: #274b9f33;
     margin-bottom: 10px;
     font-weight: 700;
 
     display: flex;
     justify-content: space-between;
+}
+
+.question-wrapper:hover,
+.question-wrapper:active {
+  cursor: pointer;
 }
 
 .question {
@@ -17,10 +23,20 @@
 
 .answer {
     margin-bottom: 60px;
+    font-size: 0.9rem;
 }
 
 .arr-down {
     height: 1.5rem;
     width: 1.5rem;
-    /* stroke: blue; */
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+}
+
+.active {
+  background-color: #274b9f5b;
 }

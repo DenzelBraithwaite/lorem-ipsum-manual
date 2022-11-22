@@ -2,6 +2,7 @@
 
 // All elements with the 'hidden' class
 const allSections = document.querySelectorAll('.hidden');
+
 // Show Homepage
 document.querySelector('.section-0').classList.remove('hidden');
 
@@ -10,10 +11,24 @@ const navbar = document.querySelector('.navbar');
 
 // All navbar buttons
 const allNavBtns = document.querySelectorAll('.btn-nav');
-console.log(allNavBtns);
 
 // Expand/Collapse button
 const btnExpand = document.querySelector('.btn-expand');
+
+// Q&A expand/collapse arrow
+const btnQA = document.querySelector('.arr-down');
+
+// All Q&A cards
+const allQuestions = document.querySelectorAll('.question-wrapper');
+
+// Expand/Collapse Q & A cards
+allQuestions.forEach(question => {
+  question.addEventListener('click', function() {
+    this.classList.toggle('active');
+    const answer = this.nextElementSibling;
+    answer.classList.toggle('hidden');
+  })
+})
 
 // Navbar toggle functionality
 btnExpand.addEventListener('click', event => {
@@ -43,12 +58,14 @@ const hideElements = function () {
 };
 
 // Toggle section visibility
+// Refactor this --V causing bugs
 allNavBtns.forEach(btn => {
     btn.addEventListener('click', event => {
         hideElements();
         for (let i = 0; i < allNavBtns.length; i++) {
             if (event.target.isEqualNode(allNavBtns[i])) {
                 allSections[i].classList.remove('hidden');
+                console.log(this);
             }
         }
     });

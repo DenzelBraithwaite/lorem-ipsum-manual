@@ -59,6 +59,13 @@ table {
     border-collapse: collapse;
 }
 
+button {
+  background: none;
+	border: none;
+	padding: 0;
+	cursor: pointer;
+}
+
 * {
     box-sizing: border-box;
     color: #343a40;
