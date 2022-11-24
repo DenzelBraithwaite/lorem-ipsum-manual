@@ -26,7 +26,7 @@ allQuestions.forEach(question => {
   question.addEventListener('click', function() {
     this.classList.toggle('active');
     const answer = this.nextElementSibling;
-    answer.classList.toggle('hidden');
+    this.classList.contains('active') ? answer.style.display = 'block' : answer.style.display = 'none'
   })
 })
 
@@ -51,7 +51,7 @@ btnExpand.addEventListener('click', event => {
 // Hide all elements and remove active FAQ questions
 const hideElements = function () {
     allQuestions.forEach(q => {
-      q.classList.contains('active') && q.classList.remove('active');
+      // q.classList.contains('active') && q.classList.remove('active');
     });
     allSections.forEach(section => {
         // if (!section.classList.contains('hidden')) {

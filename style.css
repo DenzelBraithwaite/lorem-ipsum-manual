@@ -88,7 +88,7 @@ body {
     justify-content: center;
 
     display: grid;
-    grid-template-columns: 260px auto;
+    grid-template-columns: 260px 940px;
 }
 
 header {
