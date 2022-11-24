@@ -1,19 +1,24 @@
+nav {
+    position: relative;
+}
+
 .navbar {
+    text-align: center;
     background-color: #192f64;
     height: 100vh;
     overflow-y: scroll;
     margin-left: 2px;
     transition: background-color 0.2s ease-out;
-    overflow-x: hidden;
+    overflow-x: visible;
 
     /* Hide scrollbar */
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
 }
 
 /* Hide scrollbar for Chrome, Safari and Opera */
 .navbar::-webkit-scrollbar {
-  display: none;
+    display: none;
 }
 
 .navbar:hover {
@@ -42,7 +47,7 @@ ul {
     transition: background-color 0.1s ease-in;
 
     position: relative;
-    z-index: 2;
+    z-index: 3;
 }
 
 .btn-nav:hover,
@@ -53,23 +58,22 @@ ul {
 }
 
 nav li:first-child .btn-nav {
-  margin-top: 2rem;
+    margin-top: 2rem;
 }
 
 nav li:last-child .btn-nav {
-  margin-bottom: 3rem;
+    margin-bottom: 3rem;
 }
 
 .btn-expand:link,
 .btn-expand:visited {
     background-color: #192f64;
+    background-color: red;
     color: #f8f9fa;
     text-decoration: none;
-    display: flex;
     text-align: center;
-    height: 40px;
+    line-height: 40px;
     width: 40px;
-    padding: 10px;
     border-radius: 50%;
 
     display: inline-block;
@@ -77,7 +81,7 @@ nav li:last-child .btn-nav {
     right: 0;
     top: 50%;
     transform: translate(50%, 0);
-    z-index: 1;
+    z-index: 2;
 }
 
 .btn-expand:hover,

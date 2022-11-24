@@ -60,10 +60,10 @@ table {
 }
 
 button {
-  background: none;
-	border: none;
-	padding: 0;
-	cursor: pointer;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
 }
 
 * {
@@ -79,7 +79,6 @@ html {
 body {
     position: relative;
     background-color: #edf2ff;
-    /* background-color: red; */
     max-width: 1200px;
     height: 100vh;
     margin: 0 auto;
@@ -92,19 +91,19 @@ body {
 }
 
 header {
-  position: relative;
-  text-align: center;
+    position: relative;
+    text-align: center;
+    background-color: #3260d6;
 }
 
 main {
-  z-index: 0;
-  background-color: #edf2ff;
-  max-height: 100%;
-  overflow-y: scroll;
-  overflow-x: hidden;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+    background-color: #edf2ff;
+    max-height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .wrapper {
@@ -117,11 +116,11 @@ p {
 }
 
 .title {
-  font-size: 2rem;
-  font-weight: 700;
-  text-align: center;
-  margin-bottom: 1rem;
-  padding-top: 32px;
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 1rem;
+    padding-top: 32px;
 }
 
 .subtitle {
