@@ -22,6 +22,7 @@
 }
 
 .answer {
+  display: none;
     margin-bottom: 60px;
     font-size: 0.9rem;
 }
