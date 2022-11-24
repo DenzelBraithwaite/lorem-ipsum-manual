@@ -48,24 +48,28 @@ btnExpand.addEventListener('click', event => {
     }
 });
 
-// Hide all elements
+// Hide all elements and remove active FAQ questions
 const hideElements = function () {
+    allQuestions.forEach(q => {
+      q.classList.contains('active') && q.classList.remove('active');
+    });
     allSections.forEach(section => {
-        if (!section.classList.contains('hidden')) {
-            section.classList.add('hidden');
-        }
+        // if (!section.classList.contains('hidden')) {
+        //     section.classList.add('hidden');
+        // }
+        if (section.style.display !== 'none') section.style.display = 'none';
     });
 };
 
 // Toggle section visibility
 // Refactor this --V causing bugs
 allNavBtns.forEach(btn => {
-    btn.addEventListener('click', event => {
+    btn.addEventListener('click', function (event) {
         hideElements();
         for (let i = 0; i < allNavBtns.length; i++) {
             if (event.target.isEqualNode(allNavBtns[i])) {
-                allSections[i].classList.remove('hidden');
-                console.log(this);
+                // allSections[i].classList.remove('hidden');
+                allSections[i].style.display = 'block';
             }
         }
     });
