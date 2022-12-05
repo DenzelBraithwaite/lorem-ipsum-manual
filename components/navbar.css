@@ -1,15 +1,10 @@
-nav {
-    position: relative;
-}
-
 .navbar {
     text-align: center;
     background-color: #192f64;
     height: 100vh;
-    overflow-y: scroll;
     margin-left: 2px;
     transition: background-color 0.2s ease-out;
-    overflow-x: visible;
+    overflow-y: scroll;
 
     /* Hide scrollbar */
     -ms-overflow-style: none; /* IE and Edge */
@@ -68,7 +63,6 @@ nav li:last-child .btn-nav {
 .btn-expand:link,
 .btn-expand:visited {
     background-color: #192f64;
-    background-color: red;
     color: #f8f9fa;
     text-decoration: none;
     text-align: center;
@@ -76,17 +70,15 @@ nav li:last-child .btn-nav {
     width: 40px;
     border-radius: 50%;
 
-    display: inline-block;
     position: absolute;
-    right: 0;
+    left: 260px;
     top: 50%;
-    transform: translate(50%, 0);
-    z-index: 2;
+    transform: translate(-50%, 0);
 }
 
 .btn-expand:hover,
 .btn-expand:active {
     color: #fed967;
     scale: 1.025;
-    transform: translate(55%, 0);
+    transform: translate(-45%, 0);
 }
