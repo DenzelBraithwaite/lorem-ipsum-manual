@@ -23,18 +23,21 @@ const allQuestions = document.querySelectorAll('.question-wrapper');
 
 // Expand/Collapse Q & A cards
 allQuestions.forEach(question => {
-  question.addEventListener('click', function() {
-    this.classList.toggle('active');
-    const answer = this.nextElementSibling;
-    this.classList.contains('active') ? answer.style.display = 'block' : answer.style.display = 'none'
-  })
-})
+    question.addEventListener('click', function () {
+        this.classList.toggle('active');
+        const answer = this.nextElementSibling;
+        this.classList.contains('active')
+            ? (answer.style.display = 'block')
+            : (answer.style.display = 'none');
+    });
+});
 
 // Navbar toggle functionality
 btnExpand.addEventListener('click', event => {
     if (navbar.classList.contains('nav-expanded')) {
         document.body.style = 'grid-template-columns: 40px auto;';
         event.target.innerText = '>';
+        event.target.style = 'left: 40px';
         event.target.style.opacity = '70%';
         navbar.classList.remove('nav-expanded');
 
@@ -42,6 +45,7 @@ btnExpand.addEventListener('click', event => {
     } else {
         document.body.style = 'grid-template-columns: 260px auto;';
         event.target.innerText = '<';
+        event.target.style = 'left: 260px';
         event.target.style.opacity = '100%';
         navbar.classList.add('nav-expanded');
         allNavBtns.forEach(btn => (btn.style.display = 'inline-block'));
@@ -51,7 +55,7 @@ btnExpand.addEventListener('click', event => {
 // Hide all elements and remove active FAQ questions
 const hideElements = function () {
     allQuestions.forEach(q => {
-      // q.classList.contains('active') && q.classList.remove('active');
+        // q.classList.contains('active') && q.classList.remove('active');
     });
     allSections.forEach(section => {
         // if (!section.classList.contains('hidden')) {
