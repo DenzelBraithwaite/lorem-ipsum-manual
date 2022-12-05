@@ -35,7 +35,7 @@ allQuestions.forEach(question => {
 // Navbar toggle functionality
 btnExpand.addEventListener('click', event => {
     if (navbar.classList.contains('nav-expanded')) {
-        document.body.style = 'grid-template-columns: 40px auto;';
+        document.body.style = 'grid-template-columns: 40px 1160px;';
         event.target.innerText = '>';
         event.target.style = 'left: 40px';
         event.target.style.opacity = '70%';
@@ -43,7 +43,7 @@ btnExpand.addEventListener('click', event => {
 
         allNavBtns.forEach(btn => (btn.style.display = 'none'));
     } else {
-        document.body.style = 'grid-template-columns: 260px auto;';
+        document.body.style = 'grid-template-columns: 260px 940px;';
         event.target.innerText = '<';
         event.target.style = 'left: 260px';
         event.target.style.opacity = '100%';
