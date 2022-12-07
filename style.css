@@ -158,7 +158,7 @@ p {
     body {
         max-width: 360px;
         grid-template-columns: 1fr;
-        grid-template-rows: 90vh 10vh;
+        grid-template-rows: 93vh auto;
         overflow: hidden;
     }
 
@@ -168,7 +168,6 @@ p {
 
     .navbar {
         margin-left: 0;
-        height: 10vh;
         order: 2;
         overflow-x: scroll;
         overflow-y: hidden;
@@ -184,14 +183,14 @@ p {
 
     .btn-nav:link,
     .btn-nav:visited {
-        margin: 1rem 0;
         border-radius: 4px;
-        width: 90%;
+        width: 100%;
         font-size: 1.25rem;
-        padding: 1rem 5rem;
+        padding: 2rem 4rem;
         font-weight: 700;
         transition: background-color 0.1s ease-in;
         text-align: start;
+        line-height: 0;
 
         display: inline-block;
         /* position: relative; */
@@ -199,14 +198,15 @@ p {
     }
 
     .nav-expanded {
-        /* display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        align-content: center; */
+        display: flex;
+        position: relative;
         padding: 0;
         margin: 0;
-        height: 10vh;
-        background-color: red;
+        height: 7vh;
+    }
+
+    .btn-expand {
+        display: none;
     }
 
     .logo {

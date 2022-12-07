@@ -67,8 +67,8 @@ nav li:last-child .btn-nav {
 
 .btn-expand:link,
 .btn-expand:visited {
-    background-color: #192f64;
-    color: #f8f9fa;
+    background-color: #192f64; /* Is this needed? */
+    color: #f8f9fa; /* Should this be under navnar? */
     text-decoration: none;
     text-align: center;
     line-height: 40px;
